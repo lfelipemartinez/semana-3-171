@@ -4,7 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "start-dev": "node index.js",
+        "start-dev": "node models/index.js",
         "migrate": "npx sequelize-cli db:migrate",
         "migrate:reset": "npx sequelize-cli db:migrate:undo:all && npm run migrate && npx sequelize-cli db:seed:all  ",
         "test": "cross-env NODE_ENV=test jest  --forceExit --json",
@@ -33,7 +33,8 @@
         "save": "^2.4.0",
         "sequelize": "^6.3.5",
         "sequelize-cli": "^6.2.0",
-        "sqlite3": "^5.0.0"
+        "sqlite3": "^5.0.0",
+        "vue": "^2.6.12"
     },
     "devDependencies": {
         "cross-env": "^7.0.2",
